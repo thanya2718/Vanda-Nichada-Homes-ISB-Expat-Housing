@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const repoName = 'Vanda-Nichada-Homes-ISB-Expat-Housing';
-const isGithubPages = process.env.GITHUB_ACTIONS === 'true';
+
+const isGithubPages =
+  process.env.DEPLOY_TARGET === 'github-pages';
 
 const nextConfig = {
   output: 'export',
