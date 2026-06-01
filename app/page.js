@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const contact = {
   phoneDisplay: "+66 61-959-7478",
   phoneTel: "+66619597478",
-  email: "Vanda@gmail.com",
+  email: "vanda.umaporn@gmail.com",
   lineId: "@vanda",
   lineUrl: "https://line.me/R/ti/p/@vanda",
   whatsappUrl: "https://wa.me/66619597478",
