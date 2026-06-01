@@ -1,15 +1,11 @@
-/** @type {import('next').NextConfig} */
 const repoName = 'Vanda-Nichada-Homes-ISB-Expat-Housing';
 
-const isGithubPages = process.env.DEPLOY_TARGET === 'github-pages';
-
-const nextConfig = {
+module.exports = {
   output: 'export',
   trailingSlash: true,
   images: {
     unoptimized: true,
   },
-  
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
 };
-
-module.exports = nextConfig;
