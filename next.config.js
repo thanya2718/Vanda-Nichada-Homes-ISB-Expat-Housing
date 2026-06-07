@@ -1,11 +1,10 @@
-const repoName = 'Vanda-Nichada-Homes-ISB-Expat-Housing';
-
-module.exports = {
-  output: 'export',
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export",
   trailingSlash: true,
   images: {
     unoptimized: true,
   },
-  basePath: `/${repoName}`,
-  assetPrefix: `/${repoName}/`,
 };
+
+module.exports = nextConfig;
