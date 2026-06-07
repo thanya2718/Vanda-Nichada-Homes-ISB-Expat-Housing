@@ -134,7 +134,7 @@ export default function VandaNichadaWebsite() {
   const navIds = useMemo(() => ["home", "why", "homes", "location", "contact"], []);
 
   const homeImages = [
-    "/Public/images/PalmTree1.jpg",
+    "/images/PalmTree1.jpg",
     "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80",
     "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
   ];
