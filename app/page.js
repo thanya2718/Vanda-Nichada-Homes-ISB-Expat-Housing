@@ -43,6 +43,20 @@ const propertyImageSets = {
     "images/808/808_4.jpg",
     "images/808/808_5.jpg",
   ],
+  NT001: [
+    "images/NT001/NT001_1.jpg",
+    "images/NT001/NT001_2.jpg",
+    "images/NT001/NT001_3.jpg",
+    "images/NT001/NT001_4.jpg",
+    "images/NT001/NT001_5.jpg",
+  ], 
+  NT002: [
+    "images/NT002/NT002_1.jpg",
+    "images/NT002/NT002_2.jpg",
+    "images/NT002/NT002_3.jpg",
+    "images/NT002/NT002_4.jpg",
+    "images/NT002/NT002_5.jpg",
+  ], 
 };
 
 const iconPaths = {
@@ -127,6 +141,20 @@ const content = {
         detail: "บ้านในโซนเงียบ เป็นส่วนตัว ใกล้สิ่งอำนวยความสะดวกใน Nichada Thani",
         specs: ["ทำเลดี", "ปลอดภัย", "ใกล้คลับ", "ใกล้ร้านอาหาร"],
       },
+      {  
+        title: "Nichada Thani (NT001)",
+        tag: "Private",
+        images: propertyImageSets.NT001,
+        detail: "บ้านในโซนเงียบ เป็นส่วนตัว ใกล้สิ่งอำนวยความสะดวกใน Nichada Thani",
+        specs: ["ทำเลดี", "ปลอดภัย", "ใกล้คลับ", "ใกล้ร้านอาหาร"],
+      },
+      {  
+        title: "Nichada Thani (NT002)",
+        tag: "Private",
+        images: propertyImageSets.NT002,
+        detail: "บ้านในโซนเงียบ เป็นส่วนตัว ใกล้สิ่งอำนวยความสะดวกใน Nichada Thani",
+        specs: ["ทำเลดี", "ปลอดภัย", "ใกล้คลับ", "ใกล้ร้านอาหาร"],
+      },
     ],
     locationTitle: "ทำเล Nichada Thani ใกล้ ISB",
     locationText: "Nichada Thani เป็นชุมชนที่ได้รับความนิยมจากครอบครัวต่างชาติ เพราะอยู่ใกล้ International School Bangkok มีสิ่งอำนวยความสะดวกครบ และบรรยากาศเหมาะกับการอยู่อาศัยระยะยาว",
@@ -197,6 +225,26 @@ const content = {
         detail: "A private home in a calm Nichada location with convenient access to daily amenities.",
         specs: ["Prime location", "Secure", "Near club", "Near dining"],
       },
+      {
+        id: "NT001",
+        title: "Nichada Thani (NT001)",
+        tag: "Private",
+        images: propertyImageSets.NT001,
+        detail: "A private home in a calm Nichada location with convenient access to daily amenities.",
+        specs: ["Prime location", "Secure", "Near club", "Near dining"],
+      },
+      {
+        id: "NT002",
+        title: "Nichada Thani (NT002)",
+        tag: "Private",
+        images: propertyImageSets.NT002,
+        detail: "A private home in a calm Nichada location with convenient access to daily amenities.",
+        specs: ["Prime location", "Secure", "Near club", "Near dining"],
+      },
+
+
+
+      
     ],
     locationTitle: "Nichada Thani location near ISB",
     locationText: "Nichada Thani is one of the most popular residential communities for international families, offering close access to International School Bangkok, daily conveniences, and a peaceful long-term living environment.",
