@@ -428,14 +428,14 @@ export default function VandaNichadaWebsite() {
               <Icon name="home" className="h-7 w-7" />
             </div>
             <div className="text-left">
-              <p className="text-sm font-semibold tracking-wide">Vanda Nichada Homes</p>
-              <p className="text-xs text-stone-500">ISB Expat Housing</p>
+              <p className="text-2xl font-bold tracking-wide">Vanda Nichada Homes</p>
+              <p className="text-lg text-stone-500">ISB Expat Housing</p>
             </div>
           </button>
 
           <nav className="hidden items-center gap-7 md:flex">
             {t.nav.map((item, index) => (
-              <button key={item} type="button" onClick={() => scrollToId(navIds[index])} className="text-sm font-medium text-stone-600 transition hover:text-stone-950">
+              <button key={item} type="button" onClick={() => scrollToId(navIds[index])} className="text-lg font-medium text-stone-600 transition hover:text-stone-950">
                 {item}
               </button>
             ))}
