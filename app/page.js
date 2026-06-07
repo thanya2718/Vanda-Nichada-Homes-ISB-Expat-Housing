@@ -42,7 +42,7 @@ const content = {
     otherLang: "English",
     nav: ["หน้าแรก", "จุดเด่น", "บ้านเช่า", "ทำเล", "ติดต่อ"],
     heroBadge: "Vanda Nichada Homes · ISB Expat Housing",
-    heroTitle: "บ้านเช่าพรีเมียม"  "ในนิชดาธานี ใกล้ ISB สำหรับครอบครัวนานาชาติ",
+    heroTitle: "บ้านเช่าพรีเมียม . ในนิชดาธานี ใกล้ ISB สำหรับครอบครัวนานาชาติ",
     heroSubtitle: "บ้านพร้อมอยู่ สวนส่วนตัว สระว่ายน้ำบางหลัง และชุมชนคุณภาพ เดินทางสะดวกถึง International School Bangkok",
     primaryCta: "นัดชมบ้าน",
     secondaryCta: "ดูบ้านที่แนะนำ",
