@@ -510,10 +510,10 @@ export default function VandaNichadaWebsite() {
             <motion.div initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.75 }} className="relative">
               <div className="aspect-[5/6] overflow-hidden rounded-[2rem] bg-stone-200 shadow-2xl">
 
-          {/* =====================================
-                 HERO SECTION เปลียนรูปหน้าแรก
-                      ภาพหลักหน้าเว็บไซต์
-              ===================================== */}
+{/* =====================================
+        HERO SECTION เปลียนรูปหน้าแรก
+            ภาพหลักหน้าเว็บไซต์
+    ===================================== */}
                 
               <img src={propertyImageSets.NT207[0]} alt="Premium family home near ISB" className="h-full w-full object-cover" />
               </div>
