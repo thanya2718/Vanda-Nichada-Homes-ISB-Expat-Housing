@@ -136,7 +136,7 @@ export default function VandaNichadaWebsite() {
   const navIds = useMemo(() => ["home", "why", "homes", "location", "contact"], []);
 
   const homeImages = [
-    "images/NT207_1.jpg",
+    "images/NT207.jpg",
     "images/NT784_1.jpg",
     "images/912_1.jpg",
     "images/808_1.jpg",
