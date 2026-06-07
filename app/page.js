@@ -123,7 +123,7 @@ const content = {
       {
         id: "NT207",
         title: "Nichada Thani (NT207)",
-        tag: "Premium",
+        tag: "Private",
         images: propertyImageSets.NT207,
         detail: "บ้านสไตล์โมเดิร์น พร้อมสระว่ายน้ำส่วนตัว สวนกว้าง และพื้นที่ครอบครัว",
         specs: ["4–5 ห้องนอน", "สระว่ายน้ำส่วนตัว", "ใกล้ ISB", "เหมาะกับครอบครัว"],
@@ -131,7 +131,7 @@ const content = {
       {
         id: "NT784",
         title: "Nichada Thani (NT784)",
-        tag: "Family",
+        tag: "Private",
         images: propertyImageSets.NT784,
         detail: "บ้านเดี่ยวสนามกว้าง บรรยากาศเงียบสงบ เหมาะสำหรับเด็กและสัตว์เลี้ยง",
         specs: ["สวนขนาดใหญ่", "พื้นที่ใช้สอยกว้าง", "ชุมชน Expat", "เข้าอยู่ได้เร็ว"],
@@ -509,7 +509,12 @@ export default function VandaNichadaWebsite() {
 
             <motion.div initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.75 }} className="relative">
               <div className="aspect-[5/6] overflow-hidden rounded-[2rem] bg-stone-200 shadow-2xl">
-//เปลียนรูปหน้าแรก//
+
+          {/* =====================================
+                 HERO SECTION เปลียนรูปหน้าแรก
+                      ภาพหลักหน้าเว็บไซต์
+              ===================================== */}
+                
               <img src={propertyImageSets.NT207[0]} alt="Premium family home near ISB" className="h-full w-full object-cover" />
               </div>
               <div className="absolute -bottom-8 left-8 right-8 rounded-3xl border border-white/70 bg-white/90 p-5 shadow-xl backdrop-blur">
