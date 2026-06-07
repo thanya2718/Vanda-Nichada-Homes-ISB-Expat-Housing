@@ -152,7 +152,7 @@ export default function VandaNichadaWebsite() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
           <button type="button" onClick={() => scrollToId("home")} className="flex items-center gap-3">
             <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-stone-900 text-white shadow-lg">
-              <Icon name="home" className="h-5 w-5" />
+              <Icon name="home" className="h-7 w-7" />
             </div>
             <div className="text-left">
               <p className="text-sm font-semibold tracking-wide">Vanda Nichada Homes</p>
