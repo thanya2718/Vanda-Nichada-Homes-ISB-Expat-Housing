@@ -15,7 +15,7 @@ const contact = {
 
 
 const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbx3UgcPCRXqb__tJKVOywwgzgbpW6HfCmFf7wAavOXxUIUkHFZCZblxS2PViAeUSdkuFg/exec";
+  "https://script.google.com/macros/s/AKfycbzCgXTql3c4RxbAeQGTGFn7qP3_JsFMndRRt1SxT7k56HNl90Xg4N70tnKitDcfRyUirw/exec";
 
 const propertyImageSets = {
   NT207: [
