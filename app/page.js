@@ -104,11 +104,11 @@ const content = {
     homesTitle: "Featured home examples",
     homesSubtitle: "Replace images and details with actual listings from your Facebook Page or latest available homes.",
     homes: [
-      { title: "Modern Pool Home near ISB", tag: "Premium", detail: "A modern family residence with private pool, spacious garden, and comfortable living areas.", specs: ["4–5 bedrooms", "Private pool", "Near ISB", "Family ready"] },
+      { title: "Palmtree Place at Nichada Thani (ปาล์มทรี เพลส)", tag: "Premium", detail: "A modern family residence with private pool, spacious garden, and comfortable living areas.", specs: ["4–5 bedrooms", "Private pool", "Near ISB", "Family ready"] },
       { title: "Large Garden Family House", tag: "Family", detail: "A detached home with a generous lawn, peaceful setting, and space for children and pets.", specs: ["Large garden", "Spacious layout", "Expat community", "Move-in ready"] },
       { title: "Lake & Quiet Neighborhood Home", tag: "Private", detail: "A private home in a calm Nichada location with convenient access to daily amenities.", specs: ["Prime location", "Secure", "Near club", "Near dining"] },
     ],
-    locationTitle: "Nichada Thani location near ISB",
+    locationTitle: "Palmtree Place at Nichada Thani (ปาล์มทรี เพลส)",
     locationText: "Nichada Thani is one of the most popular residential communities for international families, offering close access to International School Bangkok, daily conveniences, and a peaceful long-term living environment.",
     nearby: ["International School Bangkok (ISB)", "Nichada Club", "Restaurants and cafés", "Supermarkets", "Playgrounds and green spaces"],
     contactTitle: "Looking for a rental or sale home in Nichada Thani?",
