@@ -508,11 +508,12 @@ export default function VandaNichadaWebsite() {
             </motion.div>
 
             <motion.div initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.75 }} className="relative">
-              <div className="aspect-[4/5] overflow-hidden rounded-[2rem] bg-stone-200 shadow-2xl">
-                <img src={propertyImageSets.NT207[0]} alt="Premium family home near ISB" className="h-full w-full object-cover" />
+              <div className="aspect-[5/6] overflow-hidden rounded-[2rem] bg-stone-200 shadow-2xl">
+//เปลียนรูปหน้าแรก//
+              <img src={propertyImageSets.NT207[0]} alt="Premium family home near ISB" className="h-full w-full object-cover" />
               </div>
-              <div className="absolute -bottom-6 left-6 right-6 rounded-3xl border border-white/70 bg-white/90 p-5 shadow-xl backdrop-blur">
-                <p className="text-sm font-semibold text-stone-950">{t.trust}</p>
+              <div className="absolute -bottom-8 left-8 right-8 rounded-3xl border border-white/70 bg-white/90 p-5 shadow-xl backdrop-blur">
+                <p className="text-xl font-semibold text-stone-950">{t.trust}</p>
               </div>
             </motion.div>
           </div>
