@@ -63,9 +63,10 @@ const content = {
     homesTitle: "ตัวอย่างบ้านแนะนำ",
     homesSubtitle: "สามารถดูรูปและรายละเอียดเป็นบ้านจริงจาก Facebook Page หรือรายการล่าสุดได้",
     homes: [
-      { title: "Palmtree Place at Nichada Thani (ปาล์มทรี เพลส)", tag: "Premium", detail: "บ้านสไตล์โมเดิร์น พร้อมสระว่ายน้ำส่วนตัว สวนกว้าง และพื้นที่ครอบครัว", specs: ["4–5 ห้องนอน", "สระว่ายน้ำส่วนตัว", "ใกล้ ISB", "เหมาะกับครอบครัว"] },
-      { title: "Large Garden Family House", tag: "Family", detail: "บ้านเดี่ยวสนามกว้าง บรรยากาศเงียบสงบ เหมาะสำหรับเด็กและสัตว์เลี้ยง", specs: ["สวนขนาดใหญ่", "พื้นที่ใช้สอยกว้าง", "ชุมชน Expat", "เข้าอยู่ได้เร็ว"] },
-      { title: "Lake & Quiet Neighborhood Home", tag: "Private", detail: "บ้านในโซนเงียบ เป็นส่วนตัว ใกล้สิ่งอำนวยความสะดวกใน Nichada Thani", specs: ["ทำเลดี", "ปลอดภัย", "ใกล้คลับ", "ใกล้ร้านอาหาร"] },
+      { title: "Nichada Thani (NT207)", tag: "Premium", detail: "บ้านสไตล์โมเดิร์น พร้อมสระว่ายน้ำส่วนตัว สวนกว้าง และพื้นที่ครอบครัว", specs: ["4–5 ห้องนอน", "สระว่ายน้ำส่วนตัว", "ใกล้ ISB", "เหมาะกับครอบครัว"] },
+      { title: "Nichada Thani (NT784)", tag: "Family", detail: "บ้านเดี่ยวสนามกว้าง บรรยากาศเงียบสงบ เหมาะสำหรับเด็กและสัตว์เลี้ยง", specs: ["สวนขนาดใหญ่", "พื้นที่ใช้สอยกว้าง", "ชุมชน Expat", "เข้าอยู่ได้เร็ว"] },
+      { title: "Nichada Thani (912)", tag: "Private", detail: "บ้านในโซนเงียบ เป็นส่วนตัว ใกล้สิ่งอำนวยความสะดวกใน Nichada Thani", specs: ["ทำเลดี", "ปลอดภัย", "ใกล้คลับ", "ใกล้ร้านอาหาร"] },
+      { title: "Nichada Thani (808)", tag: "Private", detail: "บ้านในโซนเงียบ เป็นส่วนตัว ใกล้สิ่งอำนวยความสะดวกใน Nichada Thani", specs: ["ทำเลดี", "ปลอดภัย", "ใกล้คลับ", "ใกล้ร้านอาหาร"] },
     ],
     locationTitle: "ทำเล Nichada Thani ใกล้ ISB",
     locationText: "Nichada Thani เป็นชุมชนที่ได้รับความนิยมจากครอบครัวต่างชาติ เพราะอยู่ใกล้ International School Bangkok มีสิ่งอำนวยความสะดวกครบ และบรรยากาศเหมาะกับการอยู่อาศัยระยะยาว",
@@ -104,9 +105,10 @@ const content = {
     homesTitle: "Featured home examples",
     homesSubtitle: "Replace images and details with actual listings from your Facebook Page or latest available homes.",
     homes: [
-      { title: "Palmtree Place at Nichada Thani (ปาล์มทรี เพลส)", tag: "Premium", detail: "A modern family residence with private pool, spacious garden, and comfortable living areas.", specs: ["4–5 bedrooms", "Private pool", "Near ISB", "Family ready"] },
-      { title: "Large Garden Family House", tag: "Family", detail: "A detached home with a generous lawn, peaceful setting, and space for children and pets.", specs: ["Large garden", "Spacious layout", "Expat community", "Move-in ready"] },
-      { title: "Lake & Quiet Neighborhood Home", tag: "Private", detail: "A private home in a calm Nichada location with convenient access to daily amenities.", specs: ["Prime location", "Secure", "Near club", "Near dining"] },
+      { title: "Nichada Thani (NT207)", tag: "Premium", detail: "A modern family residence with private pool, spacious garden, and comfortable living areas.", specs: ["4–5 bedrooms", "Private pool", "Near ISB", "Family ready"] },
+      { title: "Nichada Thani (NT784)", tag: "Family", detail: "A detached home with a generous lawn, peaceful setting, and space for children and pets.", specs: ["Large garden", "Spacious layout", "Expat community", "Move-in ready"] },
+      { title: "Nichada Thani (912)", tag: "Private", detail: "A private home in a calm Nichada location with convenient access to daily amenities.", specs: ["Prime location", "Secure", "Near club", "Near dining"] },
+      { title: "Nichada Thani (808)", tag: "Private", detail: "A private home in a calm Nichada location with convenient access to daily amenities.", specs: ["Prime location", "Secure", "Near club", "Near dining"] },
     ],
     locationTitle: "Nichada Thani location near ISB",
     locationText: "Nichada Thani is one of the most popular residential communities for international families, offering close access to International School Bangkok, daily conveniences, and a peaceful long-term living environment.",
@@ -134,9 +136,14 @@ export default function VandaNichadaWebsite() {
   const navIds = useMemo(() => ["home", "why", "homes", "location", "contact"], []);
 
   const homeImages = [
-    "images/PalmTree1.jpg",
-    "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80",
-    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
+    "images/NT207_1.jpg",
+    "images/NT784_1.jpg",
+    "images/912_1.jpg",
+    "images/808_1.jpg",
+    
+    
+    //"https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80",
+    //"https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
   ];
 
   return (
