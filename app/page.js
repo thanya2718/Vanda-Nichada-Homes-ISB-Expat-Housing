@@ -207,7 +207,7 @@ const content = {
       {
         id: "NT207",
         title: "Nichada Thani (NT207)",
-        tag: "Premium",
+        tag: "Private",
         images: propertyImageSets.NT207,
         detail: "A modern family residence with private pool, spacious garden, and comfortable living areas.",
         specs: ["4–5 bedrooms", "Private pool", "Near ISB", "Family ready"],
@@ -215,7 +215,7 @@ const content = {
       {
         id: "NT784",
         title: "Nichada Thani (NT784)",
-        tag: "Family",
+        tag: "Private",
         images: propertyImageSets.NT784,
         detail: "A detached home with a generous lawn, peaceful setting, and space for children and pets.",
         specs: ["Large garden", "Spacious layout", "Expat community", "Move-in ready"],
