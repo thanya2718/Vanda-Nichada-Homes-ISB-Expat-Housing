@@ -42,6 +42,19 @@ const propertyImageSets = {
     "images/NT786/NT786_9.jpg",
     "images/NT786/NT786_10.jpg",
   ],
+ NT853: [
+    "images/NT853/NT853_1.jpg",
+    "images/NT853/NT853_2.jpg",
+    "images/NT853/NT853_3.jpg",
+    "images/NT853/NT853_4.jpg",
+    "images/NT853/NT853_5.jpg",
+    "images/NT853/NT853_6.jpg",
+    "images/NT853/NT853_7.jpg",
+    "images/NT853/NT853_8.jpg",
+    "images/NT853/NT853_9.jpg",
+    "images/NT853/NT853_10.jpg",
+  ],
+  
   NT784: [
     "images/NT784/NT784_1.jpg",
     "images/NT784/NT784_2.jpg",
@@ -168,7 +181,15 @@ const content = {
                 "ปรับปรุงใหม่ทั้งหมดก่อนเข้าอยู่",
                 "บ้านมุม พร้อมความเป็นส่วนตัวสูง"],
       },
-      
+      {
+        id: "NT583",
+        title: "Nichada Thani (NT583)",
+        price: "ค่าเช่า: 1xx,xxx บาท/เดือน", 
+        tag: "Private",
+        images: propertyImageSets.NT583,
+        detail: "บ้านเดี่ยวสนามกว้าง บรรยากาศเงียบสงบ เหมาะสำหรับเด็กและสัตว์เลี้ยง",
+        specs: ["สวนขนาดใหญ่", "พื้นที่ใช้สอยกว้าง", "ชุมชน Expat", "เข้าอยู่ได้เร็ว"],
+      },
       {
         id: "NT784",
         title: "Nichada Thani (NT784)",
@@ -281,6 +302,16 @@ const content = {
       },
       
       {
+        id: "NT583",
+        title: "Nichada Thani (NT583)",
+        price: "Rent: 1xx,xxx THB/month",
+        tag: "Private",
+        images: propertyImageSets.NT583,
+        detail: "A detached home with a generous lawn, peaceful setting, and space for children and pets.",
+        specs: ["Large garden", "Spacious layout", "Expat community", "Move-in ready"],
+      },     
+      
+      {
         id: "NT784",
         title: "Nichada Thani (NT784)",
         price: "Rent: 1xx,xxx THB/month",
@@ -289,6 +320,7 @@ const content = {
         detail: "A detached home with a generous lawn, peaceful setting, and space for children and pets.",
         specs: ["Large garden", "Spacious layout", "Expat community", "Move-in ready"],
       },
+      
       {
         id: "NT912",
         title: "Nichada Thani (912)",
@@ -298,6 +330,7 @@ const content = {
         detail: "A private home in a calm Nichada location with convenient access to daily amenities.",
         specs: ["Prime location", "Secure", "Near club", "Near dining"],
       },
+      
       {
         id: "NT808",
         title: "Nichada Thani (808)",
@@ -316,6 +349,7 @@ const content = {
         detail: "A private home in a calm Nichada location with convenient access to daily amenities.",
         specs: ["Prime location", "Secure", "Near club", "Near dining"],
       },
+      
       {
         id: "NT002",
         title: "Nichada Thani (NT002)",
@@ -326,9 +360,7 @@ const content = {
         specs: ["Prime location", "Secure", "Near club", "Near dining"],
       },
 
-
-
-      
+     
     ],
     locationTitle: "Nichada Thani location near ISB",
     locationText: "Nichada Thani is one of the most popular residential communities for international families, offering close access to International School Bangkok, daily conveniences, and a peaceful long-term living environment.",
