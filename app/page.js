@@ -24,7 +24,26 @@ const propertyImageSets = {
     "images/NT207/NT207_3.jpg",
     "images/NT207/NT207_4.jpg",
     "images/NT207/NT207_5.jpg",
+    "images/NT207/NT207_6.jpg",
+    "images/NT207/NT207_7.jpg",
+    "images/NT207/NT207_8.jpg",
+    "images/NT207/NT207_9.jpg",
+    "images/NT207/NT207_10.jpg",
   ],
+  
+  NT786: [
+    "images/NT784/NT786_1.jpg",
+    "images/NT784/NT786_2.jpg",
+    "images/NT784/NT786_3.jpg",
+    "images/NT784/NT786_4.jpg",
+    "images/NT784/NT786_5.jpg",
+    "images/NT784/NT786_6.jpg",
+    "images/NT784/NT786_7.jpg",
+    "images/NT784/NT786_8.jpg",
+    "images/NT784/NT786_9.jpg",
+    "images/NT784/NT786_10.jpg",
+  ],
+    
   NT784: [
     "images/NT784/NT784_1.jpg",
     "images/NT784/NT784_2.jpg",
@@ -126,8 +145,24 @@ const content = {
         tag: "Private",
         images: propertyImageSets.NT207,
         detail: "บ้านสไตล์โมเดิร์น พร้อมสระว่ายน้ำส่วนตัว สวนกว้าง และพื้นที่ครอบครัว",
-        specs: ["4–5 ห้องนอน", "สระว่ายน้ำส่วนตัว", "ใกล้ ISB", "เหมาะกับครอบครัว"],
+        specs: ["ขนาดที่ดิน: 1 ไร่ (~17,200 ตร.ฟุต)&(สนามหญ้าขนาดใหญ่สำหรับเด็กวิ่งเล่นและทำกิจกรรม)",
+                "4 ห้องนอน | 5 ห้องน้ำ",
+                "ห้องนั่งเล่นกว้างขวาง + พื้นที่ส่วนกลางขนาดใหญ่",
+                "สระว่ายน้ำส่วนตัว",
+                "ครัวตะวันตก + ครัวไทย",
+                "ห้องซักรีด | ห้องเก็บของ",
+                "ห้องพักแม่บ้าน 3 ห้อง พร้อมห้องน้ำในตัว"], 
+        
       },
+            {
+        id: "NT786",
+        title: "Nichada Thani (NT786)",
+        tag: "Private",
+        images: propertyImageSets.NT786,
+        detail: "บ้านเดี่ยวสนามกว้าง บรรยากาศเงียบสงบ เหมาะสำหรับเด็กและสัตว์เลี้ยง",
+        specs: ["สวนขนาดใหญ่", "พื้นที่ใช้สอยกว้าง", "ชุมชน Expat", "เข้าอยู่ได้เร็ว"],
+      },
+      
       {
         id: "NT784",
         title: "Nichada Thani (NT784)",
@@ -209,9 +244,18 @@ const content = {
         title: "Nichada Thani (NT207)",
         tag: "Private",
         images: propertyImageSets.NT207,
-        detail: "A modern family residence with private pool, spacious garden, and comfortable living areas.",
-        specs: ["4–5 bedrooms", "Private pool", "Near ISB", "Family ready"],
+        detail: "Nichada Park with a beautiful garden view Peaceful, Private and perfect for family living.Pet-friendly | Safe & secure neighborhood.",
+        specs: ["Land size: 1 Rai (~ 17,200 sq ft)&(large lawn for kids to run and play)", "4 Bedrooms | 5 Bathrooms", "Spacious living room + large central common area","Private swimming pool","Western kitchen + Thai kitchen","Laundry room | Storage room","3 Maid’s rooms with en-suite bathrooms"],
       },
+            {
+        id: "NT786",
+        title: "Nichada Thani (NT786)",
+        tag: "Private",
+        images: propertyImageSets.NT786,
+        detail: "A detached home with a generous lawn, peaceful setting, and space for children and pets.",
+        specs: ["Large garden", "Spacious layout", "Expat community", "Move-in ready"],
+      },
+      
       {
         id: "NT784",
         title: "Nichada Thani (NT784)",
