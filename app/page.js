@@ -13,9 +13,13 @@ const contact = {
   facebook: "https://www.facebook.com/kruvanda.me/",
 };
 
+/* ========== Link data ไป google sheet ============*/ 
 
 const GOOGLE_SCRIPT_URL =
   "https://script.google.com/macros/s/AKfycbzCgXTql3c4RxbAeQGTGFn7qP3_JsFMndRRt1SxT7k56HNl90Xg4N70tnKitDcfRyUirw/exec";
+
+
+/* ========== รูปบ้าน ============*/ 
 
 const propertyImageSets = {
   NT207: [
@@ -66,7 +70,8 @@ const propertyImageSets = {
     "images/LN16A/LN16A_9.jpg",
     "images/LN16A/LN16A_10.jpg",
   ],
-  
+
+
   NT784: [
     "images/NT784/NT784_1.jpg",
     "images/NT784/NT784_2.jpg",
@@ -74,6 +79,8 @@ const propertyImageSets = {
     "images/NT784/NT784_4.jpg",
     "images/NT784/NT784_5.jpg",
   ],
+           
+  
   NT912: [
     "images/912/912_1.jpg",
     "images/912/912_2.jpg",
@@ -159,6 +166,9 @@ const content = {
       { icon: "waves", title: "สระว่ายน้ำส่วนตัว", text: "บางหลังมีสระว่ายน้ำส่วนตัว เหมาะกับไลฟ์สไตล์ครอบครัว Expat" },
       { icon: "shield", title: "ปลอดภัยและเป็นส่วนตัว", text: "ชุมชนเงียบสงบ พร้อมระบบรักษาความปลอดภัยตลอด 24 ชั่วโมง" },
     ],
+    
+/*===================================เริ่มข้อมูลบ้าน (ภาษาไทย) ============================================*/
+    
     homesTitle: "ตัวอย่างบ้านแนะนำ",
     homesSubtitle: "สามารถดูรูปและรายละเอียดเป็นบ้านจริงจาก Facebook Page หรือรายการล่าสุดได้",
     homes: [
@@ -175,8 +185,7 @@ const content = {
                 "ห้องนั่งเล่นกว้างขวาง + พื้นที่ส่วนกลางขนาดใหญ่",
                 "สระว่ายน้ำส่วนตัว & ครัวตะวันตก + ครัวไทย",
                 "ห้องซักรีด | ห้องเก็บของ",
-                "ห้องพักแม่บ้าน 3 ห้อง พร้อมห้องน้ำในตัว"],
-                
+                "ห้องพักแม่บ้าน 3 ห้อง พร้อมห้องน้ำในตัว"],                
         
       },
             {
@@ -256,8 +265,14 @@ const content = {
         images: propertyImageSets.NT002,
         detail: "บ้านในโซนเงียบ เป็นส่วนตัว ใกล้สิ่งอำนวยความสะดวกใน Nichada Thani",
         specs: ["ทำเลดี", "ปลอดภัย", "ใกล้คลับ", "ใกล้ร้านอาหาร"],
+
+/*===================================สิ้นสุดข้อมูลบ้าน (ภาษาไทย) ============================================*/
+        
       },
     ],
+    
+/*======================================== หน้า Web ที่เป็นภาษาไทย ==========================================*/
+    
     locationTitle: "ทำเล Nichada Thani ใกล้ ISB",
     locationText: "Nichada Thani เป็นชุมชนที่ได้รับความนิยมจากครอบครัวต่างชาติ เพราะอยู่ใกล้ International School Bangkok มีสิ่งอำนวยความสะดวกครบ และบรรยากาศเหมาะกับการอยู่อาศัยระยะยาว",
     nearby: ["International School Bangkok (ISB)", "Nichada Club", "ร้านอาหารและคาเฟ่", "ซูเปอร์มาร์เก็ต", "สนามเด็กเล่นและพื้นที่สีเขียว"],
@@ -292,6 +307,9 @@ const content = {
       { icon: "waves", title: "Selected private pools", text: "Some homes include private swimming pools for a relaxed family lifestyle." },
       { icon: "shield", title: "Safe and private", text: "Quiet neighborhoods with 24-hour security and a strong expat community." },
     ],
+    
+/*==========================================เริ่มข้อมูลบ้าน (ภาษาอังกฤษ) ===============================================*/   
+    
     homesTitle: "Featured home examples",
     homesSubtitle: "Replace images and details with actual listings from your Facebook Page or latest available homes.",
     homes: [
@@ -395,9 +413,12 @@ const content = {
         detail: "A private home in a calm Nichada location with convenient access to daily amenities.",
         specs: ["Prime location", "Secure", "Near club", "Near dining"],
       },
-
+/*==========================================สิ้นสุดข้อมูลบ้าน (ภาษาอังกฤษ) ===============================================*/  
      
     ],
+
+/*=========================================== หน้า Web ที่เป็นภาษาอังกฤษ ==========================================*/    
+    
     locationTitle: "Nichada Thani location near ISB",
     locationText: "Nichada Thani is one of the most popular residential communities for international families, offering close access to International School Bangkok, daily conveniences, and a peaceful long-term living environment.",
     nearby: ["International School Bangkok (ISB)", "Nichada Club", "Restaurants and cafés", "Supermarkets", "Playgrounds and green spaces"],
