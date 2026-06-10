@@ -172,6 +172,7 @@ const content = {
       {
         id: "NT784",
         title: "Nichada Thani (NT784)",
+        price: "ค่าเช่า: 1xx,xxx บาท/เดือน", 
         tag: "Private",
         images: propertyImageSets.NT784,
         detail: "บ้านเดี่ยวสนามกว้าง บรรยากาศเงียบสงบ เหมาะสำหรับเด็กและสัตว์เลี้ยง",
@@ -180,6 +181,7 @@ const content = {
       {
         id: "NT912",
         title: "Nichada Thani (912)",
+        price: "ค่าเช่า: 1xx,xxx บาท/เดือน",
         tag: "Private",
         images: propertyImageSets.NT912,
         detail: "บ้านในโซนเงียบ เป็นส่วนตัว ใกล้สิ่งอำนวยความสะดวกใน Nichada Thani",
@@ -188,6 +190,7 @@ const content = {
       {
         id: "NT808",
         title: "Nichada Thani (808)",
+        price: "ค่าเช่า: 1xx,xxx บาท/เดือน",
         tag: "Private",
         images: propertyImageSets.NT808,
         detail: "บ้านในโซนเงียบ เป็นส่วนตัว ใกล้สิ่งอำนวยความสะดวกใน Nichada Thani",
@@ -195,6 +198,7 @@ const content = {
       },
       {  
         title: "Nichada Thani (NT001)",
+        price: "ค่าเช่า: 1xx,xxx บาท/เดือน",
         tag: "Private",
         images: propertyImageSets.NT001,
         detail: "บ้านในโซนเงียบ เป็นส่วนตัว ใกล้สิ่งอำนวยความสะดวกใน Nichada Thani",
@@ -202,6 +206,7 @@ const content = {
       },
       {  
         title: "Nichada Thani (NT002)",
+        price: "ค่าเช่า: 1xx,xxx บาท/เดือน",
         tag: "Private",
         images: propertyImageSets.NT002,
         detail: "บ้านในโซนเงียบ เป็นส่วนตัว ใกล้สิ่งอำนวยความสะดวกใน Nichada Thani",
@@ -256,7 +261,7 @@ const content = {
                 "large lawn for kids to run and play",
                 "4 Bedrooms | 5 Bathrooms",
                 "Spacious living room + large central common area",
-                "Private swimming pool","Western kitchen + Thai kitchen",
+                "Private swimming pool & Western kitchen + Thai kitchen",
                 "Laundry room | Storage room",
                 "3 Maid’s rooms with en-suite bathrooms"],
       },
@@ -278,6 +283,7 @@ const content = {
       {
         id: "NT784",
         title: "Nichada Thani (NT784)",
+        price: "Rent: 1xx,xxx THB/month",
         tag: "Private",
         images: propertyImageSets.NT784,
         detail: "A detached home with a generous lawn, peaceful setting, and space for children and pets.",
@@ -286,6 +292,7 @@ const content = {
       {
         id: "NT912",
         title: "Nichada Thani (912)",
+        price: "Rent: 1xx,xxx THB/month",
         tag: "Private",
         images: propertyImageSets.NT912,
         detail: "A private home in a calm Nichada location with convenient access to daily amenities.",
@@ -294,6 +301,7 @@ const content = {
       {
         id: "NT808",
         title: "Nichada Thani (808)",
+        price: "Rent: 1xx,xxx THB/month",
         tag: "Private",
         images: propertyImageSets.NT808,
         detail: "A private home in a calm Nichada location with convenient access to daily amenities.",
@@ -302,6 +310,7 @@ const content = {
       {
         id: "NT001",
         title: "Nichada Thani (NT001)",
+        price: "Rent: 1xx,xxx THB/month",
         tag: "Private",
         images: propertyImageSets.NT001,
         detail: "A private home in a calm Nichada location with convenient access to daily amenities.",
@@ -310,6 +319,7 @@ const content = {
       {
         id: "NT002",
         title: "Nichada Thani (NT002)",
+        price: "Rent: 1xx,xxx THB/month",
         tag: "Private",
         images: propertyImageSets.NT002,
         detail: "A private home in a calm Nichada location with convenient access to daily amenities.",
