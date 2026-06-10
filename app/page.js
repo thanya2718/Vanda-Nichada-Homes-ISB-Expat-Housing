@@ -30,7 +30,6 @@ const propertyImageSets = {
     "images/NT207/NT207_9.jpg",
     "images/NT207/NT207_10.jpg",
   ],
-  
   NT786: [
     "images/NT786/NT786_1.jpg",
     "images/NT786/NT786_2.jpg",
@@ -43,7 +42,6 @@ const propertyImageSets = {
     "images/NT786/NT786_9.jpg",
     "images/NT786/NT786_10.jpg",
   ],
-    
   NT784: [
     "images/NT784/NT784_1.jpg",
     "images/NT784/NT784_2.jpg",
@@ -141,27 +139,31 @@ const content = {
     homes: [
       {
         id: "NT207",
-        title: "Nichada Thani (NT207)",
+        title: "Nichada Thani (NT207) ค่าเช่า: 350,000 บาท/เดือน",
         tag: "Private",
         images: propertyImageSets.NT207,
-        detail: "บ้านสไตล์โมเดิร์น พร้อมสระว่ายน้ำส่วนตัว สวนกว้าง และพื้นที่ครอบครัว",
+        detail: "นิชดา พาร์ค พร้อมวิวสวนสวย ร่มรื่น สงบ เป็นส่วนตัว และเหมาะสำหรับการอยู่อาศัยของครอบครัว เลี้ยงสัตว์ได้ | ชุมชนปลอดภัยและมีระบบรักษาความปลอดภัย",
         specs: ["ขนาดที่ดิน: 1 ไร่ (~17,200 ตร.ฟุต)",
                 "สนามหญ้าขนาดใหญ่สำหรับเด็กวิ่งเล่นและทำกิจกรรม",
                 "4 ห้องนอน | 5 ห้องน้ำ",
                 "ห้องนั่งเล่นกว้างขวาง + พื้นที่ส่วนกลางขนาดใหญ่",
-                "สระว่ายน้ำส่วนตัว",
-                "ครัวตะวันตก + ครัวไทย",
+                "สระว่ายน้ำส่วนตัว & ครัวตะวันตก + ครัวไทย",
                 "ห้องซักรีด | ห้องเก็บของ",
                 "ห้องพักแม่บ้าน 3 ห้อง พร้อมห้องน้ำในตัว"], 
         
       },
             {
         id: "NT786",
-        title: "Nichada Thani (NT786)",
+        title: "Nichada Thani (NT786) ค่าเช่า: 100,000 บาท/เดือน",
         tag: "Private",
         images: propertyImageSets.NT786,
         detail: "บ้านเดี่ยวสนามกว้าง บรรยากาศเงียบสงบ เหมาะสำหรับเด็กและสัตว์เลี้ยง",
-        specs: ["สวนขนาดใหญ่", "พื้นที่ใช้สอยกว้าง", "ชุมชน Expat", "เข้าอยู่ได้เร็ว"],
+        specs: ["4+1 ห้องนอน | 4 ห้องน้ำ",
+                "พื้นที่ใช้สอย: 450 ตร.ม.",
+                "ขนาดที่ดิน: 140 ตร.ว. (6,028 ตร.ฟุต)",
+                "พื้นที่จอดรถแยกเป็นสัดส่วน – จอดรถสะดวกและปลอดภัย",
+                "ปรับปรุงใหม่ทั้งหมดก่อนเข้าอยู่",
+                "บ้านมุม พร้อมความเป็นส่วนตัวสูง"],
       },
       
       {
@@ -242,7 +244,7 @@ const content = {
     homes: [
       {
         id: "NT207",
-        title: "Nichada Thani (NT207)",
+        title: "Nichada Thani (NT207) Rent: 350,000 THB/month,
         tag: "Private",
         images: propertyImageSets.NT207,
         detail: "Nichada Park with a beautiful garden view Peaceful, Private and perfect for family living.Pet-friendly | Safe & secure neighborhood.",
@@ -254,13 +256,18 @@ const content = {
                 "Laundry room | Storage room",
                 "3 Maid’s rooms with en-suite bathrooms"],
       },
-            {
+      {
         id: "NT786",
-        title: "Nichada Thani (NT786)",
+        title: "Nichada Thani (NT786) Rent: 100,000 THB/month",
         tag: "Private",
         images: propertyImageSets.NT786,
-        detail: "A detached home with a generous lawn, peaceful setting, and space for children and pets.",
-        specs: ["Large garden", "Spacious layout", "Expat community", "Move-in ready"],
+        detail: "Spacious Corner House space for children and pets.",
+        specs: ["4+1 Bedrooms | 4 Bathrooms",
+                "Usable Area: 450 sq.m.",
+                "Land Size: 140 sq.w. (6,028 sq.ft.)",
+                "Separate Parking Area – Easy & Safe Parking)",
+                "Fully renovated before move-in",
+                "Corner House with Exceptional Privacy"],
       },
       
       {
