@@ -244,7 +244,7 @@ const content = {
     homes: [
       {
         id: "NT207",
-        title: "Nichada Thani (NT207) Rent: 350,000 THB/month,
+        title: "Nichada Thani (NT207) Rent: 350,000 THB/month",
         tag: "Private",
         images: propertyImageSets.NT207,
         detail: "Nichada Park with a beautiful garden view Peaceful, Private and perfect for family living.Pet-friendly | Safe & secure neighborhood.",
