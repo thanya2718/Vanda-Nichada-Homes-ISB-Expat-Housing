@@ -139,7 +139,8 @@ const content = {
     homes: [
       {
         id: "NT207",
-        title: "Nichada Thani (NT207)","ค่าเช่า: 350,000 บาท/เดือน",
+        title: "Nichada Thani (NT207)",
+        price: "ค่าเช่า: 350,000 บาท/เดือน",
         tag: "Private",
         images: propertyImageSets.NT207,
         detail: "บ้านพร้อมวิวสวนสวย ร่มรื่น สงบ เป็นส่วนตัวและเหมาะสำหรับการอยู่อาศัยของครอบครัว เลี้ยงสัตว์ได้",
@@ -149,12 +150,14 @@ const content = {
                 "ห้องนั่งเล่นกว้างขวาง + พื้นที่ส่วนกลางขนาดใหญ่",
                 "สระว่ายน้ำส่วนตัว & ครัวตะวันตก + ครัวไทย",
                 "ห้องซักรีด | ห้องเก็บของ",
-                "ห้องพักแม่บ้าน 3 ห้อง พร้อมห้องน้ำในตัว"], 
+                "ห้องพักแม่บ้าน 3 ห้อง พร้อมห้องน้ำในตัว"
+                "ค่าเช่า: 350,000 บาท/เดือน"], 
         
       },
             {
         id: "NT786",
-        title: "Nichada Thani (NT786) ค่าเช่า: 100,000 บาท/เดือน",
+        title: "Nichada Thani (NT786)",
+        price: "ค่าเช่า: 100,000 บาท/เดือน",      
         tag: "Private",
         images: propertyImageSets.NT786,
         detail: "บ้านเดี่ยวสนามกว้าง บรรยากาศเงียบสงบ เหมาะสำหรับเด็กและสัตว์เลี้ยง",
@@ -244,7 +247,8 @@ const content = {
     homes: [
       {
         id: "NT207",
-        title: "Nichada Thani (NT207) Rent: 350,000 THB/month",
+        title: "Nichada Thani (NT207)",
+        price: "Rent: 350,000 THB/month",
         tag: "Private",
         images: propertyImageSets.NT207,
         detail: "House with a beautiful garden view Peaceful, Private and perfect for family living.Pet-friendly.",
@@ -258,7 +262,8 @@ const content = {
       },
       {
         id: "NT786",
-        title: "Nichada Thani (NT786) Rent: 100,000 THB/month",
+        title: "Nichada Thani (NT786)",
+        price: "Rent: 100,000 THB/month",
         tag: "Private",
         images: propertyImageSets.NT786,
         detail: "Spacious Corner House space for children and pets.",
