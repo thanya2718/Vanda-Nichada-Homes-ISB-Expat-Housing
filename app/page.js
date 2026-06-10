@@ -54,6 +54,18 @@ const propertyImageSets = {
     "images/NT853/NT853_9.jpg",
     "images/NT853/NT853_10.jpg",
   ],
+ LN16A: [
+    "images/LN16A/LN16A_1.jpg",
+    "images/LN16A/LN16A_2.jpg",
+    "images/LN16A/LN16A_3.jpg",
+    "images/LN16A/LN16A_4.jpg",
+    "images/LN16A/LN16A_5.jpg",
+    "images/LN16A/LN16A_6.jpg",
+    "images/LN16A/LN16A_7.jpg",
+    "images/LN16A/LN16A_8.jpg",
+    "images/LN16A/LN16A_9.jpg",
+    "images/LN16A/LN16A_10.jpg",
+  ],
   
   NT784: [
     "images/NT784/NT784_1.jpg",
@@ -191,6 +203,18 @@ const content = {
         specs: ["สวนขนาดใหญ่", "พื้นที่ใช้สอยกว้าง", "ชุมชน Expat", "เข้าอยู่ได้เร็ว"],
       },
       {
+        id: "LN16A",
+        title: "Nichada Thani (LN16A)",
+        price: "ค่าเช่า: 1xx,xxx บาท/เดือน", 
+        tag: "Private",
+        images: propertyImageSets.LN16A,
+        detail: "บ้านเดี่ยวสนามกว้าง บรรยากาศเงียบสงบ เหมาะสำหรับเด็กและสัตว์เลี้ยง",
+        specs: ["4 ห้องนอนกว้างขวาง",
+                "ที่จอดรถส่วนตัว 2 คัน",
+                "สามารถเดินถึง ISB (International School Bangkok) ได้",
+                "พร้อมเข้าอยู่"],
+      },
+      {
         id: "NT784",
         title: "Nichada Thani (NT784)",
         price: "ค่าเช่า: 1xx,xxx บาท/เดือน", 
@@ -309,6 +333,18 @@ const content = {
         images: propertyImageSets.NT583,
         detail: "A detached home with a generous lawn, peaceful setting, and space for children and pets.",
         specs: ["Large garden", "Spacious layout", "Expat community", "Move-in ready"],
+      },     
+      {
+        id: "LN16A",
+        title: "Condo in Nichada Thani (LN16A)",
+        price: "Rent: 84,000 THB/month",
+        tag: "Private",
+        images: propertyImageSets.LN16A,
+        detail: "16th floor with a beautiful lake view – Peaceful and relaxing atmosphere.",
+        specs: ["4 spacious bedrooms",
+                "2 private parking spaces",
+                "Walking distance to ISB (International School Bangkok)",
+                "Move-in ready"],
       },     
       
       {
