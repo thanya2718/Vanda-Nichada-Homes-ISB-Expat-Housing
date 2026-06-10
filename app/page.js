@@ -139,10 +139,10 @@ const content = {
     homes: [
       {
         id: "NT207",
-        title: "Nichada Thani (NT207) ค่าเช่า: 350,000 บาท/เดือน",
+        title: "Nichada Thani (NT207)","ค่าเช่า: 350,000 บาท/เดือน",
         tag: "Private",
         images: propertyImageSets.NT207,
-        detail: "นิชดา พาร์ค พร้อมวิวสวนสวย ร่มรื่น สงบ เป็นส่วนตัว และเหมาะสำหรับการอยู่อาศัยของครอบครัว เลี้ยงสัตว์ได้ | ชุมชนปลอดภัยและมีระบบรักษาความปลอดภัย",
+        detail: "บ้านพร้อมวิวสวนสวย ร่มรื่น สงบ เป็นส่วนตัวและเหมาะสำหรับการอยู่อาศัยของครอบครัว เลี้ยงสัตว์ได้",
         specs: ["ขนาดที่ดิน: 1 ไร่ (~17,200 ตร.ฟุต)",
                 "สนามหญ้าขนาดใหญ่สำหรับเด็กวิ่งเล่นและทำกิจกรรม",
                 "4 ห้องนอน | 5 ห้องน้ำ",
@@ -247,7 +247,7 @@ const content = {
         title: "Nichada Thani (NT207) Rent: 350,000 THB/month",
         tag: "Private",
         images: propertyImageSets.NT207,
-        detail: "Nichada Park with a beautiful garden view Peaceful, Private and perfect for family living.Pet-friendly | Safe & secure neighborhood.",
+        detail: "House with a beautiful garden view Peaceful, Private and perfect for family living.Pet-friendly.",
         specs: ["Land size: 1 Rai (~ 17,200 sq ft)",
                 "large lawn for kids to run and play",
                 "4 Bedrooms | 5 Bathrooms",
