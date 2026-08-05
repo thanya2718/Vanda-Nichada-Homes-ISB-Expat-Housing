@@ -109,6 +109,106 @@ const propertyImageSets = {
     "images/NT002/NT002_4.jpg",
     "images/NT002/NT002_5.jpg",
   ], 
+
+/*==========================================Upload ข้อมูลเพิ่มเมื่อ 05/08/2569===============================================*/ 
+  
+  NT543: [
+    "images/NT543/NT543_1.jpg",
+    "images/NT543/NT543_2.jpg",
+    "images/NT543/NT543_3.jpg",
+    "images/NT543/NT543_4.jpg",
+    "images/NT543/NT543_5.jpg",
+    "images/NT543/NT543_6.jpg",
+    "images/NT543/NT543_7.jpg",
+    "images/NT543/NT543_8.jpg",
+    "images/NT543/NT543_9.jpg",
+    "images/NT543/NT543_10.jpg",
+  ],
+  NT567: [
+    "images/NT567/NT567_1.jpg",
+    "images/NT567/NT567_2.jpg",
+    "images/NT567/NT567_3.jpg",
+    "images/NT567/NT567_4.jpg",
+    "images/NT567/NT567_5.jpg",
+    "images/NT567/NT567_6.jpg",
+    "images/NT567/NT567_7.jpg",
+    "images/NT567/NT567_8.jpg",
+    "images/NT567/NT567_9.jpg",
+    "images/NT567/NT567_10.jpg",
+  ],
+  NT708: [
+    "images/NT708/NT708_1.jpg",
+    "images/NT708/NT708_2.jpg",
+    "images/NT708/NT708_3.jpg",
+    "images/NT708/NT708_4.jpg",
+    "images/NT708/NT708_5.jpg",
+    "images/NT708/NT708_6.jpg",
+    "images/NT708/NT708_7.jpg",
+    "images/NT708/NT708_8.jpg",
+    "images/NT708/NT708_9.jpg",
+    "images/NT708/NT708_10.jpg",
+  ],
+ NT821: [
+    "images/NT821/NT821_1.jpg",
+    "images/NT821/NT821_2.jpg",
+    "images/NT821/NT821_3.jpg",
+    "images/NT821/NT821_4.jpg",
+    "images/NT821/NT821_5.jpg",
+    "images/NT821/NT821_6.jpg",
+    "images/NT821/NT821_7.jpg",
+    "images/NT821/NT821_8.jpg",
+    "images/NT821/NT821_9.jpg",
+    "images/NT821/NT821_10.jpg",
+  ],
+ TN2710: [
+    "images/TN2710/TN2710_1.jpg",
+    "images/TN2710/TN2710_2.jpg",
+    "images/TN2710/TN2710_3.jpg",
+    "images/TN2710/TN2710_4.jpg",
+    "images/TN2710/TN2710_5.jpg",
+    "images/TN2710/TN2710_6.jpg",
+    "images/TN2710/TN2710_7.jpg",
+    "images/TN2710/TN2710_8.jpg",
+    "images/TN2710/TN2710_9.jpg",
+    "images/TN2710/TN2710_10.jpg",
+  ],
+ TN2710: [
+    "images/TN2717/TN2717_1.jpg",
+    "images/TN2717/TN2717_2.jpg",
+    "images/TN2717/TN2717_3.jpg",
+    "images/TN2717/TN2717_4.jpg",
+    "images/TN2717/TN2717_5.jpg",
+    "images/TN2717/TN2717_6.jpg",
+    "images/TN2717/TN2717_7.jpg",
+    "images/TN2717/TN2717_8.jpg",
+    "images/TN2717/TN2717_9.jpg",
+    "images/TN2717/TN2717_10.jpg",
+  ],
+  TN2723: [
+    "images/TN2723/TN2723_1.jpg",
+    "images/TN2723/TN2723_2.jpg",
+    "images/TN2723/TN2723_3.jpg",
+    "images/TN2723/TN2723_4.jpg",
+    "images/TN2723/TN2723_5.jpg",
+    "images/TN2723/TN2723_6.jpg",
+    "images/TN2723/TN2723_7.jpg",
+    "images/TN2723/TN2723_8.jpg",
+    "images/TN2723/TN2723_9.jpg",
+    "images/TN2723/TN2723_10.jpg",
+  ], 
+  CLW478: [
+    "images/CLW478/CLW478_1.jpg",
+    "images/CLW478/CLW478_2.jpg",
+    "images/CLW478/CLW478_3.jpg",
+    "images/CLW478/CLW478_4.jpg",
+    "images/CLW478/CLW478_5.jpg",
+    "images/CLW478/CLW478_6.jpg",
+    "images/CLW478/CLW478_7.jpg",
+    "images/CLW478/CLW478_8.jpg",
+    "images/CLW478/CLW478_9.jpg",
+    "images/CLW478/CLW478_10.jpg",
+  ], 
+/*==========================================จบ Upload ข้อมูลเพิ่มเมื่อ 05/08/2569===============================================*/  
 };
 
 const iconPaths = {
@@ -187,8 +287,8 @@ const content = {
                 "ห้องซักรีด | ห้องเก็บของ",
                 "ห้องพักแม่บ้าน 3 ห้อง พร้อมห้องน้ำในตัว"],                
         
-      },
-            {
+     },
+     {
         id: "NT786",
         title: "Nichada Thani (NT786)",
         price: "ค่าเช่า: 100,000 บาท/เดือน",      
@@ -264,11 +364,27 @@ const content = {
         tag: "Private",
         images: propertyImageSets.NT002,
         detail: "บ้านในโซนเงียบ เป็นส่วนตัว ใกล้สิ่งอำนวยความสะดวกใน Nichada Thani",
-        specs: ["ทำเลดี", "ปลอดภัย", "ใกล้คลับ", "ใกล้ร้านอาหาร"],
-
-/*===================================สิ้นสุดข้อมูลบ้าน (ภาษาไทย) ============================================*/
-        
+        specs: ["ทำเลดี", "ปลอดภัย", "ใกล้คลับ", "ใกล้ร้านอาหาร"],     
       },
+     {
+        id: "NT543",
+        title: "Nichada Thani (NT543)",
+        price: "ค่าเช่า: 100,000 บาท/เดือน",      
+        tag: "Private",
+        images: propertyImageSets.NT543,
+        detail: "บ้านเดี่ยวสนามกว้าง บรรยากาศเงียบสงบ เหมาะสำหรับเด็กและสัตว์เลี้ยง",
+        specs: ["5 ห้องนอน | 4 ห้องน้ำ",
+                "พื้นที่ใช้สอย: 430 ตร.ม.",
+                "ขนาดที่ดิน: 6,028 ตร.ฟุต",
+                "พื้นที่จอดรถแยกเป็นสัดส่วน – จอดรถสะดวกและปลอดภัย",
+                "ปรับปรุงใหม่ทั้งหมดก่อนเข้าอยู่",
+                "บ้านมุม พร้อมความเป็นส่วนตัวสูง"],
+      },
+
+
+
+
+/*===================================สิ้นสุดข้อมูลบ้าน (ภาษาไทย) ============================================*/      
     ],
     
 /*======================================== หน้า Web ที่เป็นภาษาไทย ==========================================*/
@@ -307,6 +423,7 @@ const content = {
       { icon: "waves", title: "Selected private pools", text: "Some homes include private swimming pools for a relaxed family lifestyle." },
       { icon: "shield", title: "Safe and private", text: "Quiet neighborhoods with 24-hour security and a strong expat community." },
     ],
+
     
 /*==========================================เริ่มข้อมูลบ้าน (ภาษาอังกฤษ) ===============================================*/   
     
@@ -413,6 +530,22 @@ const content = {
         detail: "A private home in a calm Nichada location with convenient access to daily amenities.",
         specs: ["Prime location", "Secure", "Near club", "Near dining"],
       },
+      {
+        id: "NT543",
+        title: "Nichada Thani (NT543)",
+        price: "Rent: 100,000 THB/month",
+        tag: "Private",
+        images: propertyImageSets.NT543,
+        detail: "Spacious Corner House space for children and pets.",
+        specs: ["5 Bedrooms | 4 Bathrooms",
+                "Usable Area: 430 sq.m.",
+                "Land Size: 6,028 sq.ft.",
+                "Separate Parking Area – Easy & Safe Parking)",
+                "Fully renovated before move-in",
+                "Corner House with Exceptional Privacy"],
+      },
+
+      
 /*==========================================สิ้นสุดข้อมูลบ้าน (ภาษาอังกฤษ) ===============================================*/  
      
     ],
