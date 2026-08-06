@@ -126,7 +126,7 @@ const propertyImageSets = {
   ],
   
   NT567: [
-    "images/NT567/NT567_1.jpg",
+    "images/NT567/NT567.jpg",
     "images/NT567/NT567_2.jpg",
     "images/NT567/NT567_3.jpg",
     "images/NT567/NT567_4.jpg",
