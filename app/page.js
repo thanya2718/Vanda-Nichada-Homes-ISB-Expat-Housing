@@ -387,7 +387,20 @@ const content = {
                 "ปรับปรุงใหม่ทั้งหมดก่อนเข้าอยู่",
                 "บ้านมุม พร้อมความเป็นส่วนตัวสูง"],
       },
-
+      {
+        id: "NT567",
+        title: "Nichada Thani (NT567)",
+        price: "ค่าเช่า: 120,000 บาท/เดือน",      
+        tag: "Private",
+        images: propertyImageSets.NT567,
+        detail: "บ้านเดี่ยวสนามกว้าง บรรยากาศเงียบสงบ เหมาะสำหรับเด็กและสัตว์เลี้ยง",
+        specs: ["4 ห้องนอน | 4 ห้องน้ำ",
+                "พื้นที่ใช้สอย: 430 ตร.ม.",
+                "ขนาดที่ดิน: 4,730 ตร.ฟุต",
+                "พื้นที่จอดรถแยกเป็นสัดส่วน – จอดรถสะดวกและปลอดภัย",
+                "ปรับปรุงใหม่ทั้งหมดก่อนเข้าอยู่",
+                "มีรถกอล์ฟให้"],
+      },
 
 
 
@@ -557,6 +570,20 @@ const content = {
                 "Separate Parking Area – Easy & Safe Parking)",
                 "Fully renovated before move-in",
                 "Corner House with Exceptional Privacy"],
+      },
+      {
+        id: "NT567",
+        title: "Nichada Thani (NT567)",
+        price: "Rent: 120,000 THB/month",
+        tag: "Private",
+        images: propertyImageSets.NT567,
+        detail: "Spacious Corner House space for children and pets.",
+        specs: ["4 Bedrooms | 4 Bathrooms",
+                "Usable Area: 430 sq.m.",
+                "Land Size: 4,730 sq.ft.",
+                "Separate Parking Area – Easy & Safe Parking)",
+                "Fully renovated before move-in",
+                "Included Golf car"],
       },
 
       
