@@ -124,6 +124,7 @@ const propertyImageSets = {
     "images/NT543/NT543_9.jpg",
     "images/NT543/NT543_10.jpg",
   ],
+  
   NT567: [
     "images/NT567/NT567_1.jpg",
     "images/NT567/NT567_2.jpg",
@@ -136,6 +137,7 @@ const propertyImageSets = {
     "images/NT567/NT567_9.jpg",
     "images/NT567/NT567_10.jpg",
   ],
+  
   NT708: [
     "images/NT708/NT708_1.jpg",
     "images/NT708/NT708_2.jpg",
@@ -148,6 +150,7 @@ const propertyImageSets = {
     "images/NT708/NT708_9.jpg",
     "images/NT708/NT708_10.jpg",
   ],
+  
  NT821: [
     "images/NT821/NT821_1.jpg",
     "images/NT821/NT821_2.jpg",
