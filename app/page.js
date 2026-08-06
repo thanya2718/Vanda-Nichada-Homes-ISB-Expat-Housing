@@ -401,7 +401,20 @@ const content = {
                 "ปรับปรุงใหม่ทั้งหมดก่อนเข้าอยู่",
                 "มีรถกอล์ฟให้"],
       },
-
+      {
+        id: "NT708",
+        title: "Nichada Thani (NT708)",
+        price: "ค่าเช่า: 140,000 บาท/เดือน",      
+        tag: "Private",
+        images: propertyImageSets.NT708,
+        detail: "บ้านเดี่ยวสนามกว้าง บรรยากาศเงียบสงบ เหมาะสำหรับเด็กและสัตว์เลี้ยง",
+        specs: ["5 ห้องนอน | 5 ห้องน้ำ",
+                "พื้นที่ใช้สอย: 540 ตร.ม.",
+                "ขนาดที่ดิน: 7,500 ตร.ฟุต",
+                "พื้นที่จอดรถแยกเป็นสัดส่วน – จอดรถสะดวกและปลอดภัย",
+                "ปรับปรุงใหม่ทั้งหมดก่อนเข้าอยู่",
+                "มีสระว่ายส่วนตัว"],
+      },
 
 
 /*===================================สิ้นสุดข้อมูลบ้าน (ภาษาไทย) ============================================*/      
@@ -585,7 +598,20 @@ const content = {
                 "Fully renovated before move-in",
                 "Included Golf car"],
       },
-
+      {
+        id: "NT708",
+        title: "Nichada Thani (NT708)",
+        price: "Rent: 140,000 THB/month",
+        tag: "Private",
+        images: propertyImageSets.NT708,
+        detail: "Spacious Corner House space for children and pets.",
+        specs: ["5 Bedrooms | 5 Bathrooms",
+                "Usable Area: 540 sq.m.",
+                "Land Size: 7,500 sq.ft.",
+                "Separate Parking Area – Easy & Safe Parking)",
+                "Fully renovated before move-in",
+                "Private pool"],
+      },
       
 /*==========================================สิ้นสุดข้อมูลบ้าน (ภาษาอังกฤษ) ===============================================*/  
      
