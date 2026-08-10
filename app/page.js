@@ -16,7 +16,7 @@ const contact = {
 /* ========== Link data ไป google sheet ============*/ 
 
 const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbzCgXTql3c4RxbAeQGTGFn7qP3_JsFMndRRt1SxT7k56HNl90Xg4N70tnKitDcfRyUirw/exec";
+  "https://script.google.com/macros/s/AKfycbxyLagKfyAbC3p-Tib7fMNqZ4udMz8n3aH9FQpsYL8sA2qvD91t-yhKJ780hcQcGugTUQ/exec";
 
 const PROPERTY_STATUS_REFRESH_MS = 60_000;
 
