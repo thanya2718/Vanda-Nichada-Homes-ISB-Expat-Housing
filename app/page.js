@@ -513,7 +513,7 @@ const content = {
                 "Land Size: 4,000 sq.ft.", 
                 "Prime location", "Near School Secure",
                 "Near club"], 
-      
+       },
       {
         id: "NT912",
         title: "Nichada Thani (912)",
