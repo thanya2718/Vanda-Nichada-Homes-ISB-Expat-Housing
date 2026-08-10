@@ -148,6 +148,9 @@ const propertyImageSets = {
     "images/NT821/NT821_8.jpg",
     "images/NT821/NT821_9.jpg",
     "images/NT821/NT821_10.jpg",
+    "images/NT821/NT821_11.jpg",
+    "images/NT821/NT821_12.jpg",
+    "images/NT821/NT821_13.jpg",
   ],
  TN2710: [
     "images/TN2710/TN2710_1.jpg",
