@@ -480,8 +480,24 @@ const content = {
                 "ขนาดที่ดิน: 4,300 ตร.ฟุต",
                 "ทำเลดี", "ใกล้โรงเรียน ปลอดภัย",
                 "ใกล้คลับ"],          
+      },   
+
+      
+      { 
+        id: "Test001",
+        title: "Nichada Thani Test001)",
+        price: "ค่าเช่า: 100,000 บาท/เดือน",
+        tag: "Private",
+        images: propertyImageSets.Test001,
+        detail: "บ้านในโซนเงียบ เป็นส่วนตัว ใกล้สิ่งอำนวยความสะดวกใน Nichada Thani",
+        specs: ["5 ห้องนอน | 4 ห้องน้ำ",
+                "พื้นที่ใช้สอย: 400 ตร.ม.",
+                "ขนาดที่ดิน: 4,300 ตร.ฟุต",
+                "ทำเลดี", "ใกล้โรงเรียน ปลอดภัย",
+                "ใกล้คลับ"],          
       },    
 
+  
 /*===================================สิ้นสุดข้อมูลบ้าน (ภาษาไทย) ============================================*/      
     ],
     
@@ -727,6 +743,20 @@ const content = {
         price: "Rent: 120,000 THB/month",
         tag: "Private",
         images: propertyImageSets.NT821,
+        detail: "A private home in a calm Nichada location with convenient access to daily amenities.",
+        specs: ["5 Bedrooms | 4 Bathrooms",
+                "Usable Area: 400 sq.m.",
+                "Land Size: 4,300 sq.ft.", 
+                "Prime location", "Near club",
+                "Near School Secure"],
+       },
+
+      {
+        id: "TEST001",
+        title: "Nichada Thani (TEST001)",
+        price: "Rent: 120,000 THB/month",
+        tag: "Private",
+        images: propertyImageSets.TEST001,
         detail: "A private home in a calm Nichada location with convenient access to daily amenities.",
         specs: ["5 Bedrooms | 4 Bathrooms",
                 "Usable Area: 400 sq.m.",
