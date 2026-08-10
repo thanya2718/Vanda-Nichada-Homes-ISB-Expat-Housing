@@ -340,11 +340,16 @@ const content = {
       {
         id: "NT808",
         title: "Nichada Thani (808)",
-        price: "ค่าเช่า: 1xx,xxx บาท/เดือน",
+        price: "ค่าเช่า: 85,000 บาท/เดือน",
         tag: "Private",
         images: propertyImageSets.NT808,
         detail: "บ้านในโซนเงียบ เป็นส่วนตัว ใกล้สิ่งอำนวยความสะดวกใน Nichada Thani",
-        specs: ["ทำเลดี", "ปลอดภัย", "ใกล้คลับ", "ใกล้ร้านอาหาร"],
+        specs: ["5 ห้องนอน | 4 ห้องน้ำ",
+                "พื้นที่ใช้สอย: 352 ตร.ม.",
+                "ขนาดที่ดิน: 4,000 ตร.ฟุต",
+                "ทำเลดี", "ใกล้โรงเรียน ปลอดภัย",
+                "ใกล้คลับ"],
+                   
       },
       {  
         id: "NT708",
@@ -521,7 +526,11 @@ const content = {
         tag: "Private",
         images: propertyImageSets.NT808,
         detail: "A private home in a calm Nichada location with convenient access to daily amenities.",
-        specs: ["Prime location", "Secure", "Near club", "Near dining"],
+        specs:[ "5 Bedrooms | 4 Bathrooms",
+                "Usable Area: 352 sq.m.",
+                "Land Size: 4,000 sq.ft.", 
+                "Prime location", "Near School Secure",
+                "Near club"], 
       },
       {
         id: "NT708",
