@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 
 const contact = {
@@ -17,6 +17,22 @@ const contact = {
 
 const GOOGLE_SCRIPT_URL =
   "https://script.google.com/macros/s/AKfycbzCgXTql3c4RxbAeQGTGFn7qP3_JsFMndRRt1SxT7k56HNl90Xg4N70tnKitDcfRyUirw/exec";
+
+const PROPERTY_STATUS_REFRESH_MS = 60_000;
+
+function normalizePropertyStatus(value) {
+  const normalized = String(value || "").trim().toLowerCase();
+
+  if (["ว่าง", "available", "vacant", "พร้อมเช่า"].includes(normalized)) {
+    return "available";
+  }
+
+  if (["เช่าแล้ว", "rented", "occupied", "ไม่ว่าง"].includes(normalized)) {
+    return "rented";
+  }
+
+  return "unknown";
+}
 
 
 /* ========== รูปบ้าน ============*/ 
@@ -744,10 +760,30 @@ function scrollToId(id) {
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
-function PropertyCard({ home, contact, primaryCta }) {
+function PropertyCard({ home, contact, primaryCta, propertyStatus, lang }) {
   const [activeImage, setActiveImage] = useState(0);
   const images = home.images?.length ? home.images : ["images/placeholder-house.jpg"];
   const currentImage = images[activeImage] || images[0];
+  const normalizedStatus = normalizePropertyStatus(propertyStatus);
+  const isRented = normalizedStatus === "rented";
+  const statusLabel =
+    normalizedStatus === "available"
+      ? lang === "th"
+        ? "ว่าง"
+        : "Available"
+      : normalizedStatus === "rented"
+        ? lang === "th"
+          ? "เช่าแล้ว"
+          : "Rented"
+        : lang === "th"
+          ? "กำลังตรวจสอบสถานะ"
+          : "Checking status";
+  const statusClass =
+    normalizedStatus === "available"
+      ? "bg-emerald-600 text-white"
+      : normalizedStatus === "rented"
+        ? "bg-red-600 text-white"
+        : "bg-stone-700 text-white";
 
   function showPreviousImage() {
     setActiveImage((current) => (current === 0 ? images.length - 1 : current - 1));
@@ -770,6 +806,9 @@ function PropertyCard({ home, contact, primaryCta }) {
         />
         <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-widest text-stone-700">
           {home.tag}
+        </span>
+        <span className={`absolute right-4 top-4 rounded-full px-3 py-1 text-xs font-bold shadow-lg ${statusClass}`}>
+          {statusLabel}
         </span>
 
         {images.length > 1 && (
@@ -831,14 +870,21 @@ function PropertyCard({ home, contact, primaryCta }) {
             </div>
           ))}
         </div>
-        <a
-          href={contact.whatsappUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-stone-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-stone-700"
-        >
-          <Icon name="message" className="h-4 w-4" /> {primaryCta}
-        </a>
+        {isRented ? (
+          <div className="mt-6 inline-flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-full bg-stone-300 px-5 py-3 text-sm font-semibold text-stone-600">
+            <Icon name="home" className="h-4 w-4" />
+            {lang === "th" ? "บ้านหลังนี้เช่าแล้ว" : "This home is rented"}
+          </div>
+        ) : (
+          <a
+            href={contact.whatsappUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-stone-900 px-5 py-3 text-sm font-semibold text-white transition hover:bg-stone-700"
+          >
+            <Icon name="message" className="h-4 w-4" /> {primaryCta}
+          </a>
+        )}
       </div>
     </article>
   );
@@ -859,8 +905,55 @@ export default function VandaNichadaWebsite() {
     message: "",
   });
   const [formStatus, setFormStatus] = useState("");
+  const [propertyStatuses, setPropertyStatuses] = useState({});
+  const [propertyStatusLoadState, setPropertyStatusLoadState] = useState("loading");
   const t = content[lang];
   const navIds = useMemo(() => ["home", "why", "homes", "location", "contact"], []);
+
+  useEffect(() => {
+    let isActive = true;
+
+    async function loadPropertyStatuses() {
+      try {
+        const separator = GOOGLE_SCRIPT_URL.includes("?") ? "&" : "?";
+        const response = await fetch(
+          `${GOOGLE_SCRIPT_URL}${separator}action=property-status&_=${Date.now()}`,
+          { method: "GET", cache: "no-store" },
+        );
+
+        if (!response.ok) {
+          throw new Error(`Status request failed: ${response.status}`);
+        }
+
+        const payload = await response.json();
+        if (!payload.success || !Array.isArray(payload.properties)) {
+          throw new Error("Invalid property status response");
+        }
+
+        const nextStatuses = {};
+        payload.properties.forEach((property) => {
+          const id = String(property?.id || "").trim().toUpperCase();
+          if (id) nextStatuses[id] = property.status;
+        });
+
+        if (isActive) {
+          setPropertyStatuses(nextStatuses);
+          setPropertyStatusLoadState("success");
+        }
+      } catch (error) {
+        console.error("Unable to load property statuses", error);
+        if (isActive) setPropertyStatusLoadState("error");
+      }
+    }
+
+    loadPropertyStatuses();
+    const refreshTimer = window.setInterval(loadPropertyStatuses, PROPERTY_STATUS_REFRESH_MS);
+
+    return () => {
+      isActive = false;
+      window.clearInterval(refreshTimer);
+    };
+  }, []);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -871,7 +964,7 @@ export default function VandaNichadaWebsite() {
         method: "POST",
         mode: "no-cors",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "text/plain;charset=utf-8",
         },
         body: JSON.stringify({
           ...formData,
@@ -1023,9 +1116,23 @@ export default function VandaNichadaWebsite() {
 
             <div className="mt-10 grid gap-6 lg:grid-cols-3">
               {t.homes.map((home) => (
-                <PropertyCard key={home.id} home={home} contact={contact} primaryCta={t.primaryCta} />
+                <PropertyCard
+                  key={home.id}
+                  home={home}
+                  contact={contact}
+                  primaryCta={t.primaryCta}
+                  propertyStatus={propertyStatuses[home.id.toUpperCase()]}
+                  lang={lang}
+                />
               ))}
             </div>
+            {propertyStatusLoadState === "error" && (
+              <p className="mt-6 rounded-2xl bg-amber-50 px-4 py-3 text-sm text-amber-800">
+                {lang === "th"
+                  ? "ไม่สามารถอ่านสถานะล่าสุดจาก Google Sheet ได้ กรุณาลองรีเฟรชหน้าเว็บ"
+                  : "The latest status could not be loaded from Google Sheet. Please refresh the page."}
+              </p>
+            )}
           </div>
         </section>
 
@@ -1105,11 +1212,15 @@ export default function VandaNichadaWebsite() {
                   className="rounded-xl border border-stone-300 bg-white px-4 py-3 text-stone-900 outline-none transition focus:border-stone-900"
                 >
                   <option value="">{lang === "th" ? "บ้านที่สนใจ" : "Preferred Property"}</option>
-                  {t.homes.map((home) => (
-                    <option key={home.id || home.title} value={home.title}>
-                      {home.title}
-                    </option>
-                  ))}
+                  {t.homes.map((home) => {
+                    const isRented = normalizePropertyStatus(propertyStatuses[home.id.toUpperCase()]) === "rented";
+                    return (
+                      <option key={home.id || home.title} value={home.title} disabled={isRented}>
+                        {home.title}
+                        {isRented ? (lang === "th" ? " — เช่าแล้ว" : " — Rented") : ""}
+                      </option>
+                    );
+                  })}
                 </select>
 
                 <select
