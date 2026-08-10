@@ -533,7 +533,7 @@ const content = {
       {
         id: "NT808",
         title: "Nichada Thani (808)",
-        price: "Rent: 1xx,xxx THB/month",
+        price: "Rent: 85,000 THB/month",
         tag: "Private",
         images: propertyImageSets.NT808,
         detail: "A private home in a calm Nichada location with convenient access to daily amenities.",
