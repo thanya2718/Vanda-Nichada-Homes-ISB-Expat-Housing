@@ -319,11 +319,19 @@ const content = {
       {
         id: "NT784",
         title: "Nichada Thani (NT784)",
-        price: "ค่าเช่า: 1xx,xxx บาท/เดือน", 
+        price: "ค่าเช่า: 90,000 บาท/เดือน", 
         tag: "Private",
         images: propertyImageSets.NT784,
         detail: "บ้านเดี่ยวสนามกว้าง บรรยากาศเงียบสงบ เหมาะสำหรับเด็กและสัตว์เลี้ยง",
-        specs: ["สวนขนาดใหญ่", "พื้นที่ใช้สอยกว้าง", "ชุมชน Expat", "เข้าอยู่ได้เร็ว"],
+        specs: ["4 ห้องนอน | 4 ห้องน้ำ",
+                "พื้นที่ใช้สอย: 352 ตร.ม.",
+                "ขนาดที่ดิน: 4,000 ตร.ฟุต",
+                "ทำเลดี", "ใกล้โรงเรียน ปลอดภัย",
+                "ใกล้คลับ"],
+                   
+          
+          
+          ["สวนขนาดใหญ่", "พื้นที่ใช้สอยกว้าง", "ชุมชน Expat", "เข้าอยู่ได้เร็ว"],
       },
       {
         id: "NT912",
@@ -499,12 +507,15 @@ const content = {
       {
         id: "NT784",
         title: "Nichada Thani (NT784)",
-        price: "Rent: 1xx,xxx THB/month",
+        price: "Rent: 90,000 THB/month",
         tag: "Private",
         images: propertyImageSets.NT784,
         detail: "A detached home with a generous lawn, peaceful setting, and space for children and pets.",
-        specs: ["Large garden", "Spacious layout", "Expat community", "Move-in ready"],
-      },
+        specs: ["4 Bedrooms | 4 Bathrooms",
+                "Usable Area: 352 sq.m.",
+                "Land Size: 4,000 sq.ft.", 
+                "Prime location", "Near School Secure",
+                "Near club"], 
       
       {
         id: "NT912",
