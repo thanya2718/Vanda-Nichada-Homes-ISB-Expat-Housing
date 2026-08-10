@@ -807,7 +807,7 @@ function PropertyCard({ home, contact, primaryCta, propertyStatus, lang }) {
         <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-widest text-stone-700">
           {home.tag}
         </span>
-        <span className={`absolute right-4 top-4 rounded-full px-3 py-1 text-xs font-bold shadow-lg ${statusClass}`}>
+        <span className={`absolute right-4 top-4 rounded-full px-5 py-2 text-base font-extrabold tracking-wide shadow-lg sm:text-lg ${statusClass}`}>
           {statusLabel}
         </span>
 
