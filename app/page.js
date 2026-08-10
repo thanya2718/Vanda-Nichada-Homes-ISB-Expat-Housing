@@ -30,7 +30,11 @@ function normalizePropertyStatus(value) {
   if (["เช่าแล้ว", "rented", "occupied", "ไม่ว่าง"].includes(normalized)) {
     return "rented";
   }
-
+  
+  if (["จอง", "reserve", "occupied", "ไม่ว่าง"].includes(normalized)) {
+    return "rented";
+  }
+  
   return "unknown";
 }
 
