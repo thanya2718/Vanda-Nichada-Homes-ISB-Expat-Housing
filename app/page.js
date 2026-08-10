@@ -893,6 +893,7 @@ function PropertyCard({ home, contact, primaryCta, propertyStatus, lang }) {
 export default function VandaNichadaWebsite() {
   const [lang, setLang] = useState("en");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [propertyFilter, setPropertyFilter] = useState("all");   /*****filter******/
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -910,6 +911,42 @@ export default function VandaNichadaWebsite() {
   const t = content[lang];
   const navIds = useMemo(() => ["home", "why", "homes", "location", "contact"], []);
 
+  /*****Start filter******/
+const propertyCounts = useMemo(
+  () =>
+    t.homes.reduce(
+      (counts, home) => {
+        const status = normalizePropertyStatus(
+          propertyStatuses[home.id.toUpperCase()]
+        );
+
+        if (status === "available") counts.available += 1;
+        if (status === "rented") counts.rented += 1;
+
+        return counts;
+      },
+      {
+        all: t.homes.length,
+        available: 0,
+        rented: 0,
+      }
+    ),
+  [propertyStatuses, t.homes]
+);
+
+const filteredHomes = useMemo(() => {
+  if (propertyFilter === "all") return t.homes;
+
+  return t.homes.filter(
+    (home) =>
+      normalizePropertyStatus(
+        propertyStatuses[home.id.toUpperCase()]
+      ) === propertyFilter
+  );
+}, [propertyFilter, propertyStatuses, t.homes]);     
+  
+  /***** End filter******/
+ 
   useEffect(() => {
     let isActive = true;
 
@@ -1114,8 +1151,60 @@ export default function VandaNichadaWebsite() {
               <a href={contact.facebook} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-full border border-stone-300 px-5 py-3 font-semibold transition hover:bg-stone-100"><Icon name="facebook" className="h-5 w-5" /> Facebook</a>
             </div>
 
+{/* =========== Fiter============ */}
+
+<div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+  <p className="text-sm font-bold uppercase tracking-[0.18em] text-stone-500">
+    {lang === "th" ? "กรองตามสถานะบ้าน" : "Filter by availability"}
+  </p>
+
+  <div className="flex w-full flex-wrap gap-2 rounded-2xl bg-stone-100 p-2 sm:w-auto">
+    {[
+      {
+        value: "all",
+        label: lang === "th" ? "ทั้งหมด" : "All",
+        count: propertyCounts.all,
+        color: "bg-stone-900",
+      },
+      {
+        value: "available",
+        label: lang === "th" ? "บ้านว่าง" : "Available",
+        count: propertyCounts.available,
+        color: "bg-emerald-600",
+      },
+      {
+        value: "rented",
+        label: lang === "th" ? "ไม่ว่าง" : "Rented",
+        count: propertyCounts.rented,
+        color: "bg-red-600",
+      },
+    ].map((filter) => {
+      const isActive = propertyFilter === filter.value;
+
+      return (
+        <button
+          key={filter.value}
+          type="button"
+          onClick={() => setPropertyFilter(filter.value)}
+          className={`min-h-11 flex-1 rounded-xl px-4 py-2.5 text-sm font-bold transition sm:flex-none ${
+            isActive
+              ? `${filter.color} text-white shadow-md`
+              : "bg-white text-stone-700 shadow-sm hover:bg-stone-200"
+          }`}
+        >
+          {filter.label}
+          <span className="ml-2 rounded-full bg-white/20 px-2 py-0.5 text-xs">
+            {filter.count}
+          </span>
+        </button>
+      );
+    })}
+  </div>
+</div>
+                {/* ===========End Fiter============ */}    
+
             <div className="mt-10 grid gap-6 lg:grid-cols-3">
-              {t.homes.map((home) => (
+              {filteredHomes.map((home) => (
                 <PropertyCard
                   key={home.id}
                   home={home}
