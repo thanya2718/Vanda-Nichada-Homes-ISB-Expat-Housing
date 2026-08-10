@@ -534,7 +534,7 @@ const content = {
         tag: "Private",
         images: propertyImageSets.NT808,
         detail: "A private home in a calm Nichada location with convenient access to daily amenities.",
-        specs:[ "5 Bedrooms | 4 Bathrooms",
+        specs: ["5 Bedrooms | 4 Bathrooms",
                 "Usable Area: 352 sq.m.",
                 "Land Size: 4,000 sq.ft.", 
                 "Prime location", "Near School Secure",
