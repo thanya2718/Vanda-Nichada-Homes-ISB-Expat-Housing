@@ -502,7 +502,7 @@ const content = {
   en: {
     otherLang: "ไทย",
     nav: ["Home", "Why Us", "Homes", "Location", "Contact"],
-    heroBadge: "Vanda Nichada Homes · ISB Expat Housing",
+    heroBadge: "Nichada Thani Houses for Rent Near ISB · Vanda Nichada Homes",
     heroTitle: "Premium rental homes in Nichada Thani near ISB for international families",
     heroSubtitle: "Move-in ready family homes with private gardens, selected private pools, and convenient access to International School Bangkok.",
     primaryCta: "Schedule a Viewing",
