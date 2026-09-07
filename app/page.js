@@ -247,7 +247,7 @@ const content = {
   th: {
     otherLang: "English",
     nav: ["หน้าแรก", "จุดเด่น", "บ้านเช่า", "ทำเล", "ติดต่อ"],
-    heroBadge: "Vanda Nichada Homes · ISB Expat Housing",
+    heroBadge: "Nichada Thani Houses for Rent Near ISB · Vanda Nichada Homes",
     heroTitle: (
   <>
     บ้านเช่าพรีเมียม
