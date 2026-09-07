@@ -1035,7 +1035,7 @@ const filteredHomes = useMemo(() => {
               <Icon name="home" className="h-7 w-7" />
             </div>
             <div className="text-left">
-              <p className="text-2xl font-bold tracking-wide">Vanda Nichada Homes</p>
+              <p className="text-2xl font-bold tracking-wide">Nichada Thani Houses for Rent Near ISB</p>
               <p className="text-lg text-stone-500">ISB Expat Housing</p>
             </div>
           </button>
